@@ -13,17 +13,23 @@
     </header>
 
     <div class="main">
-      <div class="explanation">
-        <span class="step">ステップ1</span><span>家具をタッチしてマークをつける</span>
-        <span class="step">ステップ2</span><span>変換ボタンを押して画像を保存！</span>
+      <div id="main-header">
+        <div class="explanation">
+          <span class="step">ステップ1</span><span>家具をタッチしてマークをつける</span>
+          <span class="step">ステップ2</span><span>変換ボタンを押して画像を保存！</span>
+        </div>
+        <div id="capture-fun">
+          <div>
+            <div class="capture-btn-1 btn not-save" ontouchstart=""><span>変更を保存</span></div>
+          </div>
+          <p id="alert" class="none">※変更を保存してください</p>
+          <div>
+            <div class="capture-btn-2 btn" ontouchstart=""><span>画像に変換！</span></div>
+          </div>
+          <p id="atten">変更を保存を押してから１秒くらい待ってから</p>
+        </div>
       </div>
-
-      <div>
-        <div class="capture-btn capture-btn-1 btn" ontouchstart=""><span>画像に変換</span></div>
-      </div>
-      <div>
-        <div class="capture-btn capture-btn-2 btn" ontouchstart=""><span>画像に変換</span></div>
-      </div>
+      <p id="sucsess" class="none">下の画像を長押しして保存してください</p>
 
       <img id="output" src="">
 
