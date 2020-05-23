@@ -37,9 +37,16 @@ $(function() {
     html2canvas(document.querySelector("#capture")).then(canvas => {
     document.body.appendChild(canvas)
     $("canvas").attr("id","target");
+    $(".capture-btn-1").removeClass("not-save");
+    $("#alert").addClass("none");
     });
   });
   $(".capture-btn-2").click(function() {
+    if ($(".capture-btn-1").hasClass("not-save")) {
+      $("#alert").removeClass("none");
+    } else {
+      $("#sucsess").removeClass("none");
+    }
     var canvas = document.getElementById("target");
     var dataURI = canvas.toDataURL();
     var image = document.getElementById("output");
@@ -47,3 +54,4 @@ $(function() {
   });
 
 });
+
