@@ -33,16 +33,11 @@ $(function() {
   });
 
   $(".capture-btn-1").click(function() {
-    
+    $("canvas").remove();
     html2canvas(document.querySelector("#capture")).then(canvas => {
     document.body.appendChild(canvas)
     $("canvas").attr("id","target");
     });
-
-    var canvas = document.getElementById("target");
-    var dataURI = canvas.toDataURL();
-    var image = document.getElementById("output");
-    image.src = dataURI;
   });
   $(".capture-btn-2").click(function() {
     var canvas = document.getElementById("target");
