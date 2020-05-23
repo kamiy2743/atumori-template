@@ -21,7 +21,7 @@ $(function() {
    } else {
      $(this).addClass("clicked clicked-g");
    }
-   $(".clicked-y").append('<img src="mile-fur/circle.png" class="icon-mark circle y"> ');
+   $(".clicked-y").append('<img src="mile-fur/circle.png" class="icon-mark circle y">');
    $(".clicked-n").append('<img src="mile-fur/cross.png" class="icon-mark cross n">');
    $(".clicked-g").append('<img src="mile-fur/heart.png" class="icon-mark heart g">');
 
@@ -38,6 +38,11 @@ $(function() {
     document.body.appendChild(canvas)
     $("canvas").attr("id","target");
     });
+
+    var canvas = document.getElementById("target");
+    var dataURI = canvas.toDataURL();
+    var image = document.getElementById("output");
+    image.src = dataURI;
   });
   $(".capture-btn-2").click(function() {
     var canvas = document.getElementById("target");
