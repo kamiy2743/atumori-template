@@ -34,13 +34,17 @@ $(function() {
 
   $(".capture-btn-1").click(function() {
     $("canvas").remove();
+    $("#capture").removeClass("none");
     html2canvas(document.querySelector("#capture")).then(canvas => {
     document.body.appendChild(canvas)
     $("canvas").attr("id","target");
+    $("canvas").remove();
     $(".capture-btn-1").removeClass("not-save");
     $("#alert").addClass("none");
+    $("#capture").addClass("none");
     });
   });
+
   $(".capture-btn-2").click(function() {
     if ($(".capture-btn-1").hasClass("not-save")) {
       $("#alert").removeClass("none");
@@ -54,4 +58,3 @@ $(function() {
   });
 
 });
-
