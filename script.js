@@ -33,7 +33,7 @@ $(function() {
   });
 
   $(".capture-btn-1").click(function() {
-    $("canvas").remove();
+    
     html2canvas(document.querySelector("#capture")).then(canvas => {
     document.body.appendChild(canvas)
     $("canvas").attr("id","target");
