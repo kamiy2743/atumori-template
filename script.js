@@ -35,6 +35,8 @@ $(function() {
   });
 
   $(".capture-btn-1").click(function() {
+    var getfcord = $("#friend-cord").val();
+    $("#out").text(getfcord);
     $("canvas").remove();
     $("#capture").removeClass("none");
     html2canvas(document.querySelector("#capture")).then(canvas => {
@@ -44,8 +46,6 @@ $(function() {
     $(".capture-btn-1").removeClass("not-save");
     $("#alert").addClass("none");
     $("#capture").addClass("none");
-    var getfcord = $("#friend-cord").val();
-    $("#out").text(getfcord);
     });
   });
 
