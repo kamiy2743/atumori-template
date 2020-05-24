@@ -34,9 +34,13 @@ $(function() {
    $(".clicked-g-lit").append('<img src="mile-fur/heart.png" class="icon-mark heart g g-lit">');
   });
 
-  $(".capture-btn-1").click(function() {
+  $("#friend-cord").change(function() {
     var getfcord = $("#friend-cord").val();
     $("#out").text(getfcord);
+  });
+
+  $(".capture-btn-1").click(function() {
+    $("html").scrollTop(0);
     $("canvas").remove();
     $("#capture").removeClass("none");
     html2canvas(document.querySelector("#capture")).then(canvas => {
