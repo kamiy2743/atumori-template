@@ -40,7 +40,7 @@ $(function() {
   });
 
   $(".capture-btn-1").click(function() {
-    $("html").scrollTop(0);
+    $("html, body").scrollTop(0);
     $("canvas").remove();
     $("#capture").removeClass("none");
     html2canvas(document.querySelector("#capture")).then(canvas => {
