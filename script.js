@@ -12,23 +12,26 @@ $(function() {
 
   $(".item").click(function() {
    $(".icon-mark").remove();
+   var index = $(".item").index(this);
+   $(".item-cap").eq(index).removeClass("clicked clicked-y-lit clicked-n-lit clicked-g-lit");
    if ($(this).hasClass("clicked")) {
      $(this).removeClass("clicked clicked-y clicked-n clicked-g");
    } else if (mode == "y") {
      $(this).addClass("clicked clicked-y");
+     $(".item-cap").eq(index).addClass("clicked clicked-y-lit");
    } else if (mode == "n"){
      $(this).addClass("clicked clicked-n");
+     $(".item-cap").eq(index).addClass("clicked clicked-n-lit");
    } else {
      $(this).addClass("clicked clicked-g");
+     $(".item-cap").eq(index).addClass("clicked clicked-g-lit");
    }
    $(".clicked-y").append('<img src="mile-fur/circle.png" class="icon-mark circle y">');
    $(".clicked-n").append('<img src="mile-fur/cross.png" class="icon-mark cross n">');
    $(".clicked-g").append('<img src="mile-fur/heart.png" class="icon-mark heart g">');
-  });
-
-  $("#friend-cord").click(function() {
-    var getfcord = $("#friend-cord").val();
-    $("#out").text(getfcord);
+   $(".clicked-y-lit").append('<img src="mile-fur/circle.png" class="icon-mark circle y y-lit">');
+   $(".clicked-n-lit").append('<img src="mile-fur/cross.png" class="icon-mark cross n n-lit">');
+   $(".clicked-g-lit").append('<img src="mile-fur/heart.png" class="icon-mark heart g g-lit">');
   });
 
   $(".capture-btn-1").click(function() {
@@ -41,6 +44,8 @@ $(function() {
     $(".capture-btn-1").removeClass("not-save");
     $("#alert").addClass("none");
     $("#capture").addClass("none");
+    var getfcord = $("#friend-cord").val();
+    $("#out").text(getfcord);
     });
   });
 
