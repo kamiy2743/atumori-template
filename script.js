@@ -1,16 +1,22 @@
 $(function() {
-  var mode = "y";
-  $("#btn-y").click(function() {
+  var mode = "neutral";
+  $(".btn-y").click(function() {
     mode = "y";
   });
-  $("#btn-n").click(function() {
+  $(".btn-n").click(function() {
     mode = "n";
   });
-  $("#btn-g").click(function() {
+  $(".btn-g").click(function() {
     mode = "g";
   });
 
+  $(".select-btn").click(function() {
+    $(".select-btn").removeClass("selected-btn");
+    $(this).addClass("selected-btn");
+  });
+
   $(".item").click(function() {
+   $("#alert").removeClass("none");
    $(".icon-mark").remove();
    var index = $(".item").index(this);
    $(".item-cap").eq(index).removeClass("clicked clicked-y-lit clicked-n-lit clicked-g-lit");
@@ -22,7 +28,7 @@ $(function() {
    } else if (mode == "n"){
      $(this).addClass("clicked clicked-n");
      $(".item-cap").eq(index).addClass("clicked clicked-n-lit");
-   } else {
+   } else if (mode == "g"){
      $(this).addClass("clicked clicked-g");
      $(".item-cap").eq(index).addClass("clicked clicked-g-lit");
    }
