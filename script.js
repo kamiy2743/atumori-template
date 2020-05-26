@@ -35,9 +35,9 @@ $(function() {
    $(".clicked-y").append('<img src="mile-fur/circle.png" class="icon-mark circle y">');
    $(".clicked-n").append('<img src="mile-fur/cross.png" class="icon-mark cross n">');
    $(".clicked-g").append('<img src="mile-fur/heart.png" class="icon-mark heart g">');
-   $(".clicked-y-lit").append('<img src="mile-fur/circle.png" class="icon-mark circle y y-lit">');
-   $(".clicked-n-lit").append('<img src="mile-fur/cross.png" class="icon-mark cross n n-lit">');
-   $(".clicked-g-lit").append('<img src="mile-fur/heart.png" class="icon-mark heart g g-lit">');
+   $(".clicked-y-lit").append('<img src="mile-fur/circle-0.5.png" class="icon-mark circle y-lit">');
+   $(".clicked-n-lit").append('<img src="mile-fur/cross-0.4.png" class="icon-mark cross n-lit">');
+   $(".clicked-g-lit").append('<img src="mile-fur/heart-0.5.png" class="icon-mark heart g-lit">');
   });
 
   $("#friend-cord").change(function() {
@@ -55,7 +55,7 @@ $(function() {
       $(".fa-android").addClass("for-selected");
       $(".capture-btn-1").addClass("for-android");
       $(".capture-btn-1 span").text("変更を保存 for android");
-      $("#capture").css("transform","scale(0.8)");
+      $("#capture").css("transform","scale(0.9)");
     }
   });
 
@@ -90,4 +90,3 @@ $(function() {
   $(".top-btn").click(function() {
     $("html, body").animate({"scrollTop":0}, "100");
   });
-});
