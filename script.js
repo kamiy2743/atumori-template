@@ -45,6 +45,20 @@ $(function() {
     $("#out").text(getfcord);
   });
 
+  $(".fa-android").click(function() {
+    if ($(".capture-btn-1").hasClass("for-android")) {
+      $(".fa-android").removeClass("for-selected");
+      $(".capture-btn-1").removeClass("for-android");
+      $(".capture-btn-1 span").text("変更を保存");
+      $("#capture").removeClass("capture-android");
+    } else {
+      $(".fa-android").addClass("for-selected");
+      $(".capture-btn-1").addClass("for-android");
+      $(".capture-btn-1 span").text("変更を保存 for android");
+      $("#capture").addClass("capture-android");
+    }
+  });
+
   $(".capture-btn-1").click(function() {
     $("html, body").scrollTop(0);
     $("canvas").remove();
@@ -76,5 +90,4 @@ $(function() {
   $(".top-btn").click(function() {
     $("html, body").animate({"scrollTop":0}, "100");
   });
-
 });
