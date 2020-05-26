@@ -50,12 +50,12 @@ $(function() {
       $(".fa-android").removeClass("for-selected");
       $(".capture-btn-1").removeClass("for-android");
       $(".capture-btn-1 span").text("変更を保存");
-      $("#capture").removeClass("capture-android");
+      $("#capture").css("transform","scale(1)");
     } else {
       $(".fa-android").addClass("for-selected");
       $(".capture-btn-1").addClass("for-android");
       $(".capture-btn-1 span").text("変更を保存 for android");
-      $("#capture").addClass("capture-android");
+      $("#capture").css("transform","scale(0.8)");
     }
   });
 
