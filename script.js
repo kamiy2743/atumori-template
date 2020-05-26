@@ -77,7 +77,7 @@ $(function() {
     if ($(".capture-btn-1").hasClass("not-save")) {
       $("#alert").removeClass("none");
     } else {
-      $("#sucsess").removeClass("none");
+      $(".sucsess").removeClass("none");
     }
     $("canvas").removeClass("none");
     var canvas = document.getElementById("target");
