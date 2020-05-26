@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>マイル家具　テンプレート作成</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   </head>
 
@@ -19,13 +20,10 @@
           <span class="step">ステップ2</span><span>変換ボタンを押して画像を保存！</span>
         </div>
         <div id="capture-fun">
-          <div>
-            <div class="capture-btn-1 btn not-save" ontouchstart=""><span>変更を保存</span></div>
-          </div>
+          <div class="fab fa-android"></div>
+          <div class="capture-btn-1 btn not-save" ontouchstart=""><span>変更を保存</span></div>
           <p id="alert" class="none">※変更を保存してください</p>
-          <div>
-            <div class="capture-btn-2 btn" ontouchstart=""><span>画像に変換！</span></div>
-          </div>
+          <div class="capture-btn-2 btn" ontouchstart=""><span>画像に変換！</span></div>
           <p id="atten">変更を保存 を押して１秒くらい待ってから</p>
         </div>
       </div>
@@ -33,14 +31,14 @@
 
       <img id="output" src="">
 
-      <div class="selecter">
+      <div id="selecter">
         <ul id="btn-list">
           <li id="list-y">提供できる家具(譲)⇒ 〇</li>
           <li id="list-g">欲しい家具(求)⇒ ◇</li>
           <li id="list-n">既に持っている家具⇒ ×</li>
         </ul>
+        <div id="expla"><p>下のボタンからつけるマークを選んでください</p></div>
       </div>
-      <div id="expla"><p>下のボタンからつけるマークを選んでください</p></div>
       <div id="switch">
         <div class="select-btn btn btn-y" ontouchstart="">〇</div>
         <div class="select-btn btn btn-g" ontouchstart="">◇</div>
@@ -345,14 +343,12 @@
         <span>SW- </span> <input id="friend-cord" type="text" maxlength="14">
       </div>
 
-      <div class="top-return">
+      <div id="top-return">
         <p>画像を保存するには<br>ページのTOPに戻ってください</p>
-        <div>
-          <div class="top-btn btn" ontouchstart=""><span>TOPに戻る</span></div>
-        </div>
+        <div class="top-btn btn" ontouchstart=""><span>TOPに戻る</span></div>
       </div>
 
-      <div id="capture" class="none">
+      <div id="capture" class="non">
         <div class="title-logo">
           <div id="t-logo">マイル家具テンプレート作成</div>
           <div id="f-logo">
@@ -695,3 +691,4 @@
   </body>
 
 </html>
+
