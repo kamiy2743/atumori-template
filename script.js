@@ -63,7 +63,7 @@ $(function() {
     $("html, body").scrollTop(0);
     $("canvas").remove();
     $("#capture").removeClass("none");
-    html2canvas(document.querySelector("#capture")).then(canvas => {
+    html2canvas(document.querySelector("#capture-container")).then(canvas => {
     document.body.appendChild(canvas)
     $("canvas").attr("id","target");
     $("canvas").addClass("none");
