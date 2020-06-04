@@ -2,7 +2,6 @@ $(function() {
   for (var i = 0; i <= 96; i++) {
     var jsonObj = localStorage.getItem(`Key${i}`);
     var jsObj = JSON.parse(jsonObj);
-    console.log(jsObj);
     if (jsObj != null) {
       $(".item").eq(jsObj.index).attr("class", jsObj.class);
     }
@@ -10,7 +9,6 @@ $(function() {
   for (var i = 0; i <= 96; i++) {
     var jsonObj = localStorage.getItem(`Key-${i}`);
     var jsObj = JSON.parse(jsonObj);
-    console.log(jsObj);
     if (jsObj != null) {
       $(".item-cap").eq(jsObj.index).attr("class", jsObj.class);
     }
@@ -42,7 +40,6 @@ $(function() {
    $("#alert").removeClass("none");
    $(".icon-mark").remove();
    var index = $(".item").index(this);
-   console.log(index);
    $(".item-cap").eq(index).removeClass("clicked clicked-y-lit clicked-n-lit clicked-g-lit");
    if ($(this).hasClass("clicked")) {
      $(this).removeClass("clicked clicked-y clicked-n clicked-g");
@@ -86,12 +83,10 @@ $(function() {
   $(".capture-btn-1").click(function() {
     for (var i = 0; i <= 96; i++) {
       var obj = {index: i, class: $(".item").eq(i).attr("class")}
-      console.log(obj);
       localStorage.setItem(`Key${i}`, JSON.stringify(obj));
     }
     for (var i = 0; i <= 96; i++) {
       var obj = {index: i, class: $(".item-cap").eq(i).attr("class")}
-      console.log(obj);
       localStorage.setItem(`Key-${i}`, JSON.stringify(obj));
     }
     $("html, body").scrollTop(0);
