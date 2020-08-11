@@ -109,7 +109,7 @@ var autoData = [
 
 //データ読み込み　
 function dataLoad() {
-  if(localStorage.data.length != 0) {
+  if(localStorage.data) {
     JSON.parse(localStorage.data).forEach((data,i) => {
       $(`.item-main[no="${data.no}"]`).attr("code",data.code);
     });
