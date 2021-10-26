@@ -1,0 +1,208 @@
+@charset "UTF-8";
+body {
+  font-size: 10px;
+  font-weight: bold;
+  color: #4a4a4a;
+  margin: 3px;
+  font-family: "Lato", "Noto Sans JP", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+body p {
+  margin: 0;
+}
+body .btn:active {
+  filter: brightness(0.8);
+}
+body .none {
+  display: none;
+}
+body *[state="1"] {
+  background-color: rgba(252, 130, 130, 0.9);
+}
+body *[state="2"] {
+  background-color: rgba(122, 215, 144, 0.9);
+}
+body *[state="3"] {
+  background-color: rgba(142, 184, 255, 0.8);
+}
+body header .title-wrapper {
+  display: flex;
+  height: 50px;
+  background-color: #32ab39;
+  color: #fff;
+}
+body header .title-wrapper .icon-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  margin: 5px;
+  background-color: #fcfbf4;
+}
+body header .title-wrapper .icon-image img {
+  width: 25px;
+  margin-left: 7.5px;
+  margin-top: 7px;
+}
+body header .title-wrapper .app-title {
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 50px;
+  margin-left: 7px;
+  letter-spacing: 1px;
+}
+body main .capture-wrapper {
+  width: 964px;
+  background-color: #fff;
+  margin-bottom: 150px;
+}
+body main .capture-wrapper .capture-title {
+  display: flex;
+  height: 150px;
+  background-color: #32ab39;
+  color: #fff;
+}
+body main .capture-wrapper .capture-title .icon-image {
+  width: 110px;
+  height: 110px;
+  border-radius: 90px;
+  margin: 20px;
+  background-color: #fcfbf4;
+}
+body main .capture-wrapper .capture-title .icon-image img {
+  width: 70px;
+  margin-left: 20.5px;
+  margin-top: 20px;
+}
+body main .capture-wrapper .capture-title .app-title {
+  font-size: 48px;
+  font-weight: normal;
+  line-height: 88px;
+  margin-top: 30px;
+}
+body main .capture-wrapper .capture-title .author {
+  font-size: 22px;
+  font-weight: normal;
+  float: right;
+  margin-top: -6px;
+  margin-right: 0px;
+}
+body main .capture-wrapper .mark-explain-container {
+  height: 60px;
+  border: 0.5px solid #dadada;
+  background-color: rgba(72, 195, 79, 0.15);
+  display: flex;
+}
+body main .capture-wrapper .mark-explain-container .mark-container {
+  display: flex;
+  margin: 0 31px;
+}
+body main .capture-wrapper .mark-explain-container .mark-container .mark {
+  width: 48px;
+  height: 48px;
+  margin-top: 6px;
+  border-radius: 50px;
+}
+body main .capture-wrapper .mark-explain-container .mark-container .mark-explain {
+  color: #555555;
+  font-size: 23px;
+  margin-top: 12px;
+  margin-left: 8px;
+}
+body main .capture-wrapper .capture-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+body main .capture-wrapper .capture-table td {
+  border: 1px solid #e4e4e4;
+}
+body main .capture-wrapper .capture-table .mile-title {
+  width: 116px;
+  background-color: #c7ffc2;
+  line-height: 36px;
+  text-align: center;
+}
+body main .capture-wrapper .capture-table .mile-title p {
+  font-size: 24px;
+  line-height: 21px;
+  margin: 0 -10px -14px;
+  margin-bottom: -14px;
+}
+body main .capture-wrapper .capture-table .mile-title span {
+  font-size: 16px;
+}
+body main .capture-wrapper .capture-table .item-name {
+  text-align: center;
+  font-size: 19px;
+  font-weight: normal;
+}
+body main .capture-wrapper .capture-table .item-container {
+  width: 70px;
+  height: 70px;
+  padding: 0;
+}
+body main .capture-wrapper .capture-table .item-container .item-main {
+  width: 63px;
+  height: 63px;
+  margin: 2.5px;
+  border-radius: 20px;
+}
+body main .capture-wrapper .capture-table .item-container .item-main .item-image {
+  margin-top: 2px;
+  margin-left: 5px;
+  width: 56px;
+}
+body main .capture-wrapper .capture-table .item-container .item-main .info-text {
+  font-size: 12px;
+  height: 10px;
+  text-align: center;
+  transform-origin: bottom;
+  transform: scale(0.8);
+  margin-top: -10px;
+}
+body main .explain-wrapper {
+  margin: 20px 0;
+}
+body main .explain-wrapper .explain-container .explain-title {
+  font-size: 18px;
+  padding: 0 5px;
+  margin: 0 5px 10px;
+  border-bottom: 1px solid #b3b3b3;
+}
+body main .explain-wrapper .explain-container .explain-text {
+  margin: 10px;
+  font-size: 11px;
+}
+body main .captured-image-wrapper {
+  margin-bottom: 100px;
+}
+body main .captured-image-wrapper .captured-image-Container {
+  width: 295px;
+  margin: 30px auto;
+  filter: drop-shadow(0 0 7.5px #797979);
+}
+body main .captured-image-wrapper .captured-image-Container .captured-image {
+  width: 295px;
+}
+body main .captured-image-wrapper .waiting-text {
+  color: #797979;
+  font-size: 16px;
+  text-align: center;
+  margin: 70px 0;
+}
+body main .captured-image-wrapper .download-btn {
+  width: 130px;
+  background-color: #95c0ff;
+  font-size: 13px;
+  text-align: center;
+  padding: 10px 20px;
+  margin: 0 auto;
+  border: 1px solid #507cff;
+  border-radius: 5px;
+}
+body main .captured-image-wrapper .download-btn .fa-download {
+  margin-left: -5px;
+  margin-right: 5px;
+}
+body main .captured-image-wrapper .download-btn a {
+  color: #4a4a4a;
+  text-decoration: none;
+}/*# sourceMappingURL=convertPage.css.map */
