@@ -17,7 +17,6 @@ function generateItemElements() {
     var rawElement = "";
     var index = 0;
     
-    let count = 0;
     ITEM_DATAS.forEach(item_datas => {
         // マイル表示部分
         var mile = item_datas.mile;
@@ -38,7 +37,6 @@ function generateItemElements() {
             var item_variation_count = items.attrs.length;
             // 6個以上なら2列にする
             var rowspan = item_variation_count > 5 ? 2 : 1;
-            console.log(count++);
             rawElement += `<tr><td class="item-name" rowspan="${rowspan}">${item_name}</td>`;
 
             // 1列なら5回、2列なら10回
