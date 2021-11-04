@@ -22,7 +22,7 @@ body {
         filter: brightness(0.8);
     }
     .none {
-        display: none;
+        display: none !important;
     }
     *[state="1"] {
         background-color: $mark-red;
@@ -70,25 +70,25 @@ body {
             margin-bottom: 150px;
             .capture-title {
                 display: flex;
-                height: 150px;
+                height: 130px;
                 background-color: $green-main;
                 color: #fff;
                 .icon-image {
-                    width: 110px;
-                    height: 110px;
+                    width: 100px;
+                    height: 100px;
                     border-radius: 90px;
-                    margin: 20px;
+                    margin: 15px;
                     background-color: rgb(252,251,244);
                     img {
-                        width: 70px;
+                        width: 60px;
                         margin-left: 20.5px;
                         margin-top: 20px;
                     }
                 }
                 .app-title {
-                    font-size: 48px;
+                    font-size: 46px;
                     font-weight: normal;
-                    line-height: 88px;
+                    line-height: 70px;
                     margin-top: 30px;
                 }
                 .author {
@@ -96,7 +96,7 @@ body {
                     font-weight: normal;
                     float: right;
                     margin-top: -6px;
-                    margin-right: 0px;
+                    margin-right: 10px;
                 }
             }
             .mark-explain-container {
@@ -129,9 +129,9 @@ body {
                 }
                 .mile-title {
                     width: 116px;
-                    background-color: $green-sub;
                     line-height: 36px;
                     text-align: center;
+                    background-color: $green-sub;
                     p {
                         font-size: 24px;
                         line-height: 21px;
@@ -141,6 +141,9 @@ body {
                     span {
                         font-size: 16px;
                     }
+                }
+                .mile-title, .td-bottom {
+                    border-bottom: 2px solid rgb(199, 199, 199);
                 }
                 .item-name {
                     text-align: center;
@@ -157,9 +160,10 @@ body {
                         margin: 2.5px;
                         border-radius: 20px;
                         .item-image {
+                            max-width: 56px;
+                            max-height: 56px;
                             margin-top: 2px;
                             margin-left: 5px;
-                            width: 56px;
                         }
                         .info-text {
                             font-size: 12px;
@@ -192,11 +196,13 @@ body {
         .captured-image-wrapper {
             margin-bottom: 100px;
             .captured-image-Container {
-                width: 295px;
+                display: flex;
+                // width: 295px;
                 margin: 30px auto;
                 filter: drop-shadow(0 0 7.5px #797979);
                 .captured-image {
-                    width: 295px;
+                    width: 295 * 0.5px;
+                    margin: 0 auto;
                 }
             }
             .waiting-text {
@@ -205,22 +211,25 @@ body {
                 text-align: center;
                 margin: 70px 0;
             }
-            .download-btn {
-                width: 130px;
-                background-color: #95c0ff;
-                font-size: 13px;
-                text-align: center;
-                padding: 10px 20px;
-                margin: 0 auto;
-                border: 1px solid #507cff;
-                border-radius: 5px;
-                .fa-download {
-                    margin-left: -5px;
-                    margin-right: 5px;
-                }
-                a {
-                    color: $color;
-                    text-decoration: none;
+            .download-btn-container {
+                display: flex;
+                .download-btn {
+                    width: 110px;
+                    background-color: #95c0ff;
+                    font-size: 13px;
+                    text-align: center;
+                    padding: 10px 20px;
+                    margin: 0 auto;
+                    border: 1px solid #507cff;
+                    border-radius: 5px;
+                    .fa-download {
+                        margin-left: -5px;
+                        margin-right: 5px;
+                    }
+                    a {
+                        color: $color;
+                        text-decoration: none;
+                    }
                 }
             }
         }

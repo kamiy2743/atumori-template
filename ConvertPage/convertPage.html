@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
-        <title>マイル家具テンプレート作成 Ver.1.11</title>
-        <link rel="stylesheet" type="text/css" href="convertPage.css?ver1">
+        <title>マイル家具テンプレート作成 Ver.2.0</title>
+        <link rel="stylesheet" type="text/css" href="convertPage.css?ver5">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -14,17 +14,17 @@
         <header>
             <div class="title-wrapper">
                 <div class="icon-image"><img src="../image/logo1.png"></div>
-                <p class="app-title">マイル家具テンプレート作成 Ver.1.11</p>
+                <p class="app-title">マイル家具テンプレート作成 Ver.2.0</p>
             </div>
         </header>
 
         <main>
-            <!-- 変換用部分 -->
-            <div class="capture-wrapper none" id="capture">
+            <!-- 変換用部分1 -->
+            <div class="capture-wrapper none" id="capture1">
                 <div class="capture-title">
                     <div class="icon-image"><img src="../image/logo1.png"></div>
                     <div>
-                        <p class="app-title">マイル家具テンプレート作成 Ver.1.11</p>
+                        <p class="app-title">マイル家具テンプレート作成 Ver.2.0 ①</p>
                         <span class="author">created by @kamiy2743</span>
                     </div>
                 </div>
@@ -43,7 +43,33 @@
                     </div>
                 </div>
                 <!-- スクリプトから生成 -->
-                <table class="capture-table"></table>
+                <table class="capture-table" imageIndex="0"></table>
+            </div>
+            <!-- 変換用部分2 -->
+            <div class="capture-wrapper none" id="capture2">
+                <div class="capture-title">
+                    <div class="icon-image"><img src="../image/logo1.png"></div>
+                    <div>
+                        <p class="app-title">マイル家具テンプレート作成 Ver.2.0 ②</p>
+                        <span class="author">created by @kamiy2743</span>
+                    </div>
+                </div>
+                <div class="mark-explain-container">
+                    <div class="mark-container" style="margin-left:113px">
+                        <div class="mark" state="1"></div>
+                        <p class="mark-explain">提供できる家具</p>
+                    </div>
+                    <div class="mark-container">
+                        <div class="mark" state="2"></div>
+                        <p class="mark-explain">ほしい家具</p>
+                    </div>
+                    <div class="mark-container">
+                        <div class="mark" state="3"></div>
+                        <p class="mark-explain">所持済みの家具</p>
+                    </div>
+                </div>
+                <!-- スクリプトから生成 -->
+                <table class="capture-table" imageIndex="1"></table>
             </div>
 
             <!-- 保存用画像 -->
@@ -59,20 +85,27 @@
             </div>
             <div class="captured-image-wrapper">
                 <div class="captured-image-Container">
-                    <img src="" class="captured-image none">
+                    <img src="" class="captured-image" imageIndex="0">
+                    <img src="" class="captured-image" imageIndex="1">
                 </div>
                 <p class="waiting-text">画像に変換中……</p>
-                <div class="download-btn btn">
-                    <i class="fas fa-download"></i>
-                    <a href="" class="captured-image-link">ダウンロード</a>
+                <div class="download-btn-container none">
+                    <div class="download-btn btn">
+                        <i class="fas fa-download"></i>
+                        <a href="" class="captured-image-link" imageIndex="0">ダウンロード</a>
+                    </div>
+                    <div class="download-btn btn">
+                        <i class="fas fa-download"></i>
+                        <a href="" class="captured-image-link" imageIndex="1">ダウンロード</a>
+                    </div>
                 </div>
             </div>
 
         </main>
 
-        <script src="../data/canvas.js?ver1"></script>
-        <script src="../data/data.js?ver1"></script>
-        <!-- <script src="../data/newData.js?ver1"></script> -->
-        <script src="convertPage.js?ver1"></script>
+        <script src="../data/canvas.js?ver5"></script>
+        <!-- <script src="../data/data.js?ver5"></script> -->
+        <script src="../data/newData.js?ver5"></script>
+        <script src="convertPage.js?ver5"></script>
     </body>
 </html>
