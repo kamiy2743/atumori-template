@@ -258,7 +258,8 @@ body {
                         margin: 2.5px;
                         border-radius: 20px;
                         .item-image {
-                            width: 40px;
+                            max-width: 40px;
+                            max-height: 40px;
                             margin-top: 4px;
                             margin-left: 5px;
                         }
